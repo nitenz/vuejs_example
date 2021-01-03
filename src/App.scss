@@ -1,0 +1,146 @@
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    height: 100%;
+    .action, 
+    .drama,
+    .popular,
+    .scifi{
+      height: 550px;
+    }
+}
+
+.page-header{
+  padding-top: 60px;
+  .container-user{
+    position: relative;
+  }
+  .page-header-container{
+    width: 80%;
+    height: 150px;
+    display: inline-block;
+    h1{
+      display: inline;
+      font-size: 5.5rem;
+      font-family: cursive;
+      position: absolute;
+      left: 213px !important;
+      top: 92px !important;
+    }
+    svg{
+      width: 150px;
+      height: 150px;
+      float: left;
+      margin: 0px 20px 0px 30px;
+      position: absolute;
+      top: 47px;
+      left: 28px;
+    }
+  }
+}
+
+
+@media (max-width: 992px) {
+  .container-user{
+    .user{
+      div{
+        display: inline;
+      }
+    }
+    display: block;
+    position: relative;
+    top: 10px;
+  }
+
+  .navbar-expand-lg{
+    .navbar-collapse {
+      display: -webkit-box!important;
+      display: -ms-flexbox!important;
+      display: flex!important;
+      -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+    }
+  } 
+  .page-header{
+    .container-user{
+      position: relative;
+    }
+    .page-header-container{
+      height: 110px;
+      
+      h1{
+        font-size: 2.5rem;
+        left: 130px !important;
+        top: 86px !important;
+      }
+      svg{
+        width: 90px;
+        position: absolute;
+        top: 50px;
+        left: 0px;
+        height: 90px;    
+      }
+    }
+  }
+}
+.container-user{   
+  display: inline-block;
+  .user{
+    div{
+      display: inline;
+    } 
+  }
+}
+#login-btn,
+#logout-btn{
+  &.hidden{
+    display: none;
+  }
+}
+@media (max-width: 670px) {
+ .page{
+    .page-header{
+        .page-header-container{
+          .container-user{
+            top: -10px;
+          }
+        }
+    }
+  }
+  
+}
+
+@media (max-width: 500px) {
+  .container-user{   
+    .user{
+      div{
+        display: inline;
+      } 
+    }
+    display: block;
+    position: relative;
+    top: 10px;
+  }
+
+  .page-header{
+    .container-user{
+      position: relative;
+    }
+    .page-header-container{
+      height: 110px;
+      h1{
+        font-size: 1.5rem;
+        left: 123px !important;
+        top: 121px !important;
+      }
+      svg{
+        width: 90px;
+        top: 77px;
+        height: 90px;    
+      }
+    }
+  }
+}
